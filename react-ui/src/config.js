@@ -1,9 +1,6 @@
 let BACKEND_SERVER = null;
-if (process.env.REACT_APP_BACKEND_SERVER) {
-  BACKEND_SERVER = process.env.REACT_APP_BACKEND_SERVER;
-} else {
-  BACKEND_SERVER = "http://3.110.204.172:5001/api/";
-}
+ console.log(process.env.BACKEND_SERVICE);
+ BACKEND_SERVER = process.env.BACKEND_SERVICE;
 
 const config = {
     // basename: only at build time to set, and don't add '/' at end off BASENAME for breadcrumbs, also don't put only '/' use blank('') instead,
